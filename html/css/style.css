@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    border-top: 10px #333 solid;
+}
+
+header {
+    height: 100px;
+}
+
+header>h1 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100px;
+    height: 100px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background: url('http://www.openfoundry.org/images/webdev-party-log-white.png');
+
+}
+
+.container {
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    right: 30px;
+}
+
+nav>ul {
+    height: 80px;
+    background: #ccc;
+}
+
+nav>ul li {
+    display: inline;
+}
+
+nav>ul li a {
+    float: left;
+    padding: 30px 40px;
+}
+
+#main {
+    width: 700px;
+    float: right;
+    background: #fcc;
+}
+
+aside {
+    width: 260px;
+    float: left;
+    background: #cfc;
+}
+
+footer {
+    clear: both;
+    background: #666;
+}
