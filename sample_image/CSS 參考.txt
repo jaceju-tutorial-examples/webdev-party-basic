@@ -1,0 +1,23 @@
+底色： #F0F0E1
+
+Logo: 223 x 127 (51, 57)
+
+Nav: 600x(10+50+10)
+Nav 預設顏色：#343426
+Nav 移過顏色：#B22D00 (邊) #FFF (底)
+Nav 字型： Ribeye
+
+Aside: 300 x * (200, )
+Aside 標題： #242413
+Aside 選單移過背景色： #B22D00
+Aside 選單預設顏色： #666
+Aside 選單寬度： 120px;
+
+Main: 960 - 300 - 30 = 630 (140, )
+
+Article: 600
+Article 標題顏色： #8C2300
+Article 內容顏色： #444444
+
+Footer Section ： 960 / 4 = 10 + 200 + 10
+Footer 底色： #777
