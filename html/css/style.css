@@ -1,36 +1,38 @@
+/* Common */
 body {
-    margin: 0;
-    padding: 0;
-    background: #F0F0E1;
     border-top: 10px #333 solid;
+    background: #F0F0E1;
 }
 
-header {
-    height: 100px;
+.container {
+    position: relative;
+    margin: 0 auto;
+    width: 960px;
 }
 
-header>h1 {
+/* Header */
+#wrapper>header {
+    height: 140px;
+}
+
+#wrapper>header h1 {
     position: absolute;
-    top: 41px;
-    left: 57px;
     width: 223px;
     height: 127px;
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
-    background: url('../images/logo.png');
-
+    background: url(../images/logo.png);
+    left: 51px;
+    top: 47px;
 }
 
+/* Navigation */
 nav {
     position: absolute;
     width: 600px;
     top: -10px;
-    right: 30px;
-}
-
-nav>ul {
-    background: #ccc;
+    right: 0;
 }
 
 nav>ul li {
@@ -42,34 +44,20 @@ nav>ul li a {
     height: 50px;
     line-height: 50px;
     padding: 0 20px;
-    font-family: 'Ribeye', cursive;
     font-size: 24px;
     color: #343426;
     text-decoration: none;
     border-top: 10px #333 solid;
+    font-family: 'Ribeye', cursive;
 }
 
 nav>ul li a:hover {
-    background: #FFF;
+    background: #fff;
     border-top: 10px #B22D00 solid;
     border-bottom: 10px #B22D00 solid;
 }
 
-nav>ul li a:after {
-    width: 30px;
-    height: 30px;
-    background: #ccc;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 20px solid #B22D00;
-}
-
-.container {
-    position: relative;
-    width: 960px;
-    margin: 0 auto;
-}
-
+/* Main */
 #main {
     width: 630px;
     float: right;
@@ -84,12 +72,14 @@ nav>ul li a:after {
     font-size: 28px;
     line-height: 50px;
     color: #8C2300;
+    text-shadow: 3px 3px 6px #800000;
 }
 
-aside {
-    padding-top: 100px;
+/* Sidebar */
+#wrapper>aside {
     width: 300px;
     float: left;
+    padding-top: 50px;
     text-align: right;
 }
 
@@ -118,12 +108,17 @@ aside section ul a:hover {
     color: #fff;
 }
 
-footer {
-    margin-top: 20px;
+aside section img {
+-webkit-transform: rotate(6deg) skew(-10deg,5deg);
+-moz-transform: rotate(6deg) skew(-10deg,5deg);
+-o-transform: rotate(6deg) skew(-10deg,5deg);
+}
+
+/* Footer */
+body>footer {
     clear: both;
+    background: #777;
     overflow: hidden;
-    min-height: 200px;
-    background: #666;
 }
 
 footer section {
@@ -148,3 +143,33 @@ footer section ul a {
     color: #fff;
     text-decoration: none;
 }
+
+/* @media query */
+
+@media screen and (max-width: 800px) {
+    .container {
+        width: 800px;
+    }
+    #main {
+        width: 500px;
+    }
+    nav {
+        width: 500px;
+    }
+    nav>ul li a {
+        font-size: 18px;
+        padding: 0 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
