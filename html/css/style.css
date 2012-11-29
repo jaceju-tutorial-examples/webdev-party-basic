@@ -40,6 +40,7 @@ nav>ul li {
 }
 
 nav>ul li a {
+    position: relative;
     float: left;
     height: 50px;
     line-height: 50px;
@@ -55,6 +56,19 @@ nav>ul li a:hover {
     background: #fff;
     border-top: 10px #B22D00 solid;
     border-bottom: 10px #B22D00 solid;
+}
+
+nav>ul li a:hover:after {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    margin-left: -10px;
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #B22D00;
 }
 
 /* Main */
